@@ -11,6 +11,28 @@ info:
     * le remboursement en cas de balance négative.
 servers:
   - url: 'http://localhost:3000'
-paths: {}
+paths:
+  '/orders/{id}/{folderReference}/exchange':
+    parameters:
+      - type: string
+        name: id
+        in: path
+        required: true
+        description: identifiant de la commande oui.sncf
+        schema:
+          type: string
+      - type: string
+        name: folderReference
+        in: path
+        required: true
+        description: identifiant du dossier dans la commande oui.sncf
+        schema:
+          type: string
+    post:
+      summary: "Créer un nouveau processus d'échange"
+      responses:
+        '303':
+          description: See Other
+      description: "Utiliser ce endpoint pour créer un nouveau processus d'échange concernant le dossier indiqué dans la commande oui.sncf."
 components:
   schemas: {}
