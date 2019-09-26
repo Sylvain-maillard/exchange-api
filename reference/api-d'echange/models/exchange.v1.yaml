@@ -17,6 +17,8 @@ properties:
       - reserved
       - finalizing
       - finalized
+  wish:
+    $ref: ./Wishes/wish.v1.yaml
 required:
   - id
   - state

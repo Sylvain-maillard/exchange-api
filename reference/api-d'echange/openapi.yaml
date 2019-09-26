@@ -78,7 +78,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: ./models/wish.v1.yaml
+              $ref: ./models/Wishes/wish.v1.yaml
             examples:
               example-1: {}
 components:

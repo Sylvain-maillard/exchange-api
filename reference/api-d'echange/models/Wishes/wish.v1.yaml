@@ -5,3 +5,7 @@ properties:
     type: array
     items:
       $ref: ./passenger.v1.yaml
+  schedule:
+    $ref: ./schedule.v1.yaml
+  journey:
+    $ref: ./journey.v1.yaml
