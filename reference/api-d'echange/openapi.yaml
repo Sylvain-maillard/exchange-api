@@ -1,9 +1,16 @@
-openapi: '3.0.0'
+openapi: 3.0.0
 info:
-  title: Api d'échange
+  title: "Api d'échange"
   version: '1.0'
+  description: |-
+    Api permettant l'échange d'un dossier d'une commande oui.sncf.
+    Elle permet:
+    * la recherche de nouvelles solutions,
+    * la gestion de la balance,
+    * le paiement du complément en cas de balance positive,
+    * le remboursement en cas de balance négative.
 servers:
-- url: http://localhost:3000
+  - url: 'http://localhost:3000'
 paths: {}
 components:
   schemas: {}
