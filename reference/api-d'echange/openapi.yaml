@@ -61,5 +61,25 @@ paths:
             application/json:
               schema:
                 $ref: ./models/exchange.v1.yaml
+  '/exchanges/{id}/wishes/':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    post:
+      summary: "Envoi les souhaits d'échange"
+      responses:
+        '200':
+          description: OK
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./models/wish.v1.yaml
+            examples:
+              example-1: {}
 components:
   schemas: {}

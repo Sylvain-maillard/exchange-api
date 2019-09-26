@@ -1,0 +1,18 @@
+title: Schedule
+type: object
+x-examples:
+  example-1: {}
+properties:
+  outward:
+    type: string
+    format: date-time
+  inward:
+    type: string
+    format: date-time
+  outwardType:
+    $ref: ./scheduletype.v1.yaml
+  inwardType:
+    $ref: ./scheduletype.v1.yaml
+required:
+  - outward
+  - outwardType
