@@ -31,8 +31,8 @@ paths:
     post:
       summary: "Créer un nouveau processus d'échange"
       responses:
-        '303':
-          description: See Other
+        '200':
+          description: OK
       description: "Utiliser ce endpoint pour créer un nouveau processus d'échange concernant le dossier indiqué dans la commande oui.sncf."
 components:
   schemas: {}

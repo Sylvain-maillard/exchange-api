@@ -1,0 +1,22 @@
+title: Exchange
+type: object
+x-examples: {}
+properties:
+  id:
+    type: string
+    description: "Identifiant du processus d'échange"
+    format: uuid
+  state:
+    type: string
+    description: Etat du processus actuel
+    enum:
+      - init
+      - requesting_proposals
+      - proposals_found
+      - reserving
+      - reserved
+      - finalizing
+      - finalized
+required:
+  - id
+  - state
