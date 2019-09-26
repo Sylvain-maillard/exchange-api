@@ -33,6 +33,33 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/exchange.v1.yaml
       description: "Utiliser ce endpoint pour créer un nouveau processus d'échange concernant le dossier indiqué dans la commande oui.sncf."
+      tags:
+        - order
+        - exchange
+  '/exchanges/{id}':
+    parameters:
+      - type: string
+        name: id
+        in: path
+        required: true
+        description: "identifiant du processus d'échange"
+        schema:
+          type: string
+    get:
+      summary: "Récupérer l'état actuel du processus d'échange"
+      tags:
+        - exchange
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/exchange.v1.yaml
 components:
   schemas: {}
