@@ -5,3 +5,9 @@ properties:
     type: string
   destination:
     type: string
+  departureDateTime:
+    type: string
+    format: date-time
+  arrivalDateTime:
+    type: string
+    format: date-time
