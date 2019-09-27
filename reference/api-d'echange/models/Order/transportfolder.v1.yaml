@@ -1,0 +1,4 @@
+title: TransportFolder
+allOf:
+  - {}
+type: object
