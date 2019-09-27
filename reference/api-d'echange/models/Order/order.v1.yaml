@@ -1,0 +1,10 @@
+title: Order
+type: object
+description: Représente une commande Oui.sncf
+properties:
+  id:
+    type: string
+  '':
+    type: array
+    items:
+      $ref: ./folder.v1.yaml

@@ -1,0 +1,6 @@
+title: Transaction
+type: object
+properties:
+  id:
+    type: string
+description: Représente une transaction utilisée pour payer ou pour rembourser un ou plusieurs dossiers dans une commande Oui.sncf
