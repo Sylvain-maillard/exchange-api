@@ -1,5 +1,0 @@
-type: string
-title: ScheduleType
-enum:
-  - DEPARTURE_FROM
-  - ARRIVAL_AT

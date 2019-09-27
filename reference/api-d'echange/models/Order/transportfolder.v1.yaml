@@ -1,4 +1,18 @@
 title: TransportFolder
 allOf:
-  - {}
+  - properties:
+      amount:
+        type: string
+      passengers:
+        type: array
+        items:
+          $ref: ../Wishes/passenger.v1.yaml
+      outward:
+        $ref: ../../../common/models/Travel/travel.v1.yaml
+      inward:
+        $ref: ../../../common/models/Travel/travel.v1.yaml
+    required:
+      - amount
+      - passengers
+      - outward
 type: object

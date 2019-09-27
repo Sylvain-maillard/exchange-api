@@ -1,10 +1,11 @@
 title: Folder
 type: object
 description: Représente un dossier parmis une commande Oui.sncf
+x-tags:
+  - exchange
 properties:
   reference:
     type: string
+    description: Référence de dossier
   order:
     $ref: ./order.v1.yaml
-x-tags:
-  - exchange

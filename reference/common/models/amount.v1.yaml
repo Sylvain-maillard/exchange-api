@@ -1,0 +1,11 @@
+title: Amount
+type: object
+properties:
+  value:
+    type: string
+    description: 'TODO :ajouter le pattern'
+  currency:
+    type: string
+required:
+  - value
+  - currency

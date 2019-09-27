@@ -1,0 +1,17 @@
+title: Balance
+type: object
+description: "Balance de l'échange: soit positive, soit négative, soit neutre."
+properties:
+  newAmount:
+    $ref: ../../../common/models/amount.v1.yaml
+  totalAmount:
+    $ref: ../../../common/models/amount.v1.yaml
+  exchangeFeesAmount:
+    $ref: ../../../common/models/amount.v1.yaml
+  initialAmount:
+    $ref: ../../../common/models/amount.v1.yaml
+required:
+  - newAmount
+  - totalAmount
+  - exchangeFeesAmount
+  - initialAmount

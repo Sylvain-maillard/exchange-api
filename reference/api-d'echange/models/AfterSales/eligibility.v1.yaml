@@ -1,0 +1,9 @@
+title: Eligibility
+type: object
+description: "Porte la logique d'éligibilité des éléments du dossier (les passagers, les voyages) à l'échange / remboursement.\n\nTODO: gérer les cas complexes.  "
+properties:
+  allPassengersAreEligiblesForExchange:
+    type: boolean
+    description: "Si true, alors on peut échanger tous les passagers  => n'est pas utilisé dans le cadre du MVP"
+  allTravelsAreEligiblesForExchange:
+    type: boolean

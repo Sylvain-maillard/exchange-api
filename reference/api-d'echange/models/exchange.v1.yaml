@@ -1,6 +1,7 @@
 title: Exchange
 type: object
 x-examples: {}
+description: ''
 properties:
   id:
     type: string
@@ -17,8 +18,25 @@ properties:
       - reserved
       - finalizing
       - finalized
-  wish:
-    $ref: ./Wishes/wish.v1.yaml
+  initialFolder:
+    $ref: ./Order/transportfolder.v1.yaml
+  eligibility:
+    $ref: ./AfterSales/eligibility.v1.yaml
+  proposals:
+    $ref: ./Proposals/proposals.v1.yaml
+  balance:
+    $ref: ./ExchangeDir/balance.v1.yaml
+  newFolder:
+    $ref: ./Order/transportfolder.v1.yaml
+  transaction:
+    $ref: ./Order/transaction.v1.yaml
+  urlToRedirectToProceedToPayment:
+    type: string
+    description: >-
+      Si l'état est "finalizing", alors cette url permet d'afficher la page de
+      paiement (cas du Web) ou l'ACS (cas du mobile)
+
+      Meilleur nom à trouver pour cette url
 required:
   - id
   - state

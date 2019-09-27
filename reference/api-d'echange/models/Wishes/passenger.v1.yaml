@@ -5,3 +5,10 @@ properties:
     type: string
   lastname:
     type: string
+  typology:
+    type: string
+    description: 'typologie du passager: CHILD, CHILD_UNDER_FOUR, etc..'
+required:
+  - firstname
+  - lastname
+  - typology

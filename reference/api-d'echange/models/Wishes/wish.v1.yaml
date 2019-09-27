@@ -1,11 +1,16 @@
 title: Wish
 type: object
+description: "Souhait d'échange"
 properties:
   passengers:
     type: array
+    enum:
+      - all
+    description: "Soit d'échange des passagers."
     items:
       $ref: ./passenger.v1.yaml
   schedule:
     $ref: ./schedule.v1.yaml
-  journey:
-    $ref: ./journey.v1.yaml
+required:
+  - passengers
+  - schedule

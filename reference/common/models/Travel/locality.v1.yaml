@@ -1,0 +1,8 @@
+title: Locality
+type: object
+description: 'Représente soit une gare, soit une ville. '
+properties:
+  label:
+    type: string
+required:
+  - label

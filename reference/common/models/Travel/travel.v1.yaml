@@ -1,0 +1,14 @@
+title: Travel
+type: object
+properties:
+  origin:
+    $ref: ./locality.v1.yaml
+  destination:
+    $ref: ./locality.v1.yaml
+  departureDateTime:
+    type: string
+    format: date-time
+required:
+  - origin
+  - destination
+  - departureDateTime

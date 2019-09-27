@@ -77,6 +77,14 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/exchange.v1.yaml
+            application/xml:
+              schema:
+                type: object
+                properties: {}
       description: ''
       requestBody:
         content:
@@ -87,5 +95,58 @@ paths:
               example-1: {}
       tags:
         - exchange
+  '/exchanges/{id}/reservations':
+    parameters:
+      - type: string
+        name: id
+        in: path
+        required: true
+    post:
+      summary: "Réserver une proposition d'échange"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/exchange.v1.yaml
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                proposalId:
+                  type: string
+                  format: uuid
+                  description: Identifiant de la proposition
+  '/exchanges/{id}/finalization':
+    parameters:
+      - type: string
+        name: id
+        in: path
+        required: true
+    post:
+      summary: "Finalisation de l'échange"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/exchange.v1.yaml
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                newEmail:
+                  type: string
+                  description: Si le client souhaite utiliser un autre émail que celui connu dans la commande.
+                callbackToInvokeAfterPayment:
+                  type: string
+                  description: "Url du consommateur de l'api qui sera utilisée une fois que le paiement et la finalisation sont fait."
+        description: ''
 components:
   schemas: {}

@@ -1,0 +1,9 @@
+title: Proposals
+type: object
+description: >
+  Contient toutes les propositions. Ce modèle correspond à la sortie VSD, mais
+  c'est temporaire.
+
+
+
+  Penser à mettre des UUID sur chaque proposal
