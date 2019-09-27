@@ -81,5 +81,7 @@ paths:
               $ref: ./models/Wishes/wish.v1.yaml
             examples:
               example-1: {}
+      tags:
+        - exchange
 components:
   schemas: {}
