@@ -16,3 +16,9 @@ allOf:
       - passengers
       - outward
 type: object
+x-examples:
+  Exemple dossier PARIS / LYON:
+    value:
+      outward:
+        origin: FRPAR
+        destination: FRLYS
