@@ -43,6 +43,9 @@ paths:
                 folderReferenceToExchange:
                   type: string
                   description: Référence du dossier à échanger.
+              required:
+                - orderId
+                - folderReferenceToExchange
             examples: {}
         description: ''
   '/exchanges/{id}':

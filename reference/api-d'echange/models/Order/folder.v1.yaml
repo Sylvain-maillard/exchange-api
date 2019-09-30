@@ -7,5 +7,5 @@ properties:
   reference:
     type: string
     description: Référence de dossier
-  order:
+  '':
     $ref: ./order.v1.yaml
